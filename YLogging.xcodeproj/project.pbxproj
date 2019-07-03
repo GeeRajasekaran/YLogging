@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		94019DB922CCAD88008097E4 /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 94019DB722CCAD88008097E4 /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94019DC022CCADA0008097E4 /* YLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94019DBF22CCADA0008097E4 /* YLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94019DB422CCAD88008097E4 /* YLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94019DB722CCAD88008097E4 /* YLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLogging.h; sourceTree = "<group>"; };
 		94019DB822CCAD88008097E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94019DBF22CCADA0008097E4 /* YLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				94019DB722CCAD88008097E4 /* YLogging.h */,
+				94019DBF22CCADA0008097E4 /* YLog.swift */,
 				94019DB822CCAD88008097E4 /* Info.plist */,
 			);
 			path = YLogging;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					94019DB322CCAD88008097E4 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94019DC022CCADA0008097E4 /* YLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		94019DBD22CCAD88008097E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		94019DBE22CCAD88008097E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
